@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:joguinho_detetive/src/utils/routes_names.dart';
 import 'package:joguinho_detetive/src/modules/game/game_page.dart';
 import 'package:joguinho_detetive/src/modules/home/home_page.dart';
-import 'package:joguinho_detetive/src/utils/routes_names.dart';
 
 class AppRouter {
   static Route<dynamic> generateRoutes(RouteSettings settings) {

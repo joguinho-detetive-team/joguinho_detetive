@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:joguinho_detetive/src/modules/home/home_page.dart';
-import 'package:joguinho_detetive/src/utils/routes_names.dart';
 import 'package:joguinho_detetive/src/routes.dart';
+import 'package:joguinho_detetive/src/utils/routes_names.dart';
+import 'package:joguinho_detetive/src/modules/home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
