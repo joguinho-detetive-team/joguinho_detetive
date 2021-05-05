@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:joguinho_detetive/src/app_widget.dart';
+import 'package:joguinho_detetive/src/application/app_module.dart';
 
-void main() => runApp(AppWidget());
+void main() => runApp(AppModule());
