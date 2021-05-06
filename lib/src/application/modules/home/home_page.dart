@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:joguinho_detetive/src/utils/routes_names.dart';
+import 'package:joguinho_detetive/src/application/routes/routes_names.dart';
 
 class HomePage extends StatefulWidget {
   @override

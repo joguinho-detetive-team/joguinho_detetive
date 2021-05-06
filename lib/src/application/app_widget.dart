@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:joguinho_detetive/src/application/routes/routes.dart';
-import 'package:joguinho_detetive/src/utils/routes_names.dart';
+import 'package:joguinho_detetive/src/application/routes/routes_names.dart';
 import 'package:joguinho_detetive/src/application/modules/home/home_page.dart';
 
 class AppWidget extends StatelessWidget {

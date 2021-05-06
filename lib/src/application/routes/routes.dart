@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:joguinho_detetive/src/utils/routes_names.dart';
+import 'package:joguinho_detetive/src/application/routes/routes_names.dart';
 import 'package:joguinho_detetive/src/application/modules/game/game_page.dart';
 import 'package:joguinho_detetive/src/application/modules/home/home_page.dart';
 import 'package:joguinho_detetive/src/application/routes/detective_page_router.dart';
