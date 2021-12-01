@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:joguinho_detetive/src/application/modules/login/widgets/avatar_generator.dart';
+import 'package:joguinho_detetive/src/application/routes/routes_names.dart';
+import 'package:nuvigator/next.dart';
 
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final nuvigator = Nuvigator.of(context);
+
     return Scaffold(
       backgroundColor: Colors.grey[800],
       body: Padding(
@@ -40,6 +44,11 @@ class LoginPage extends StatelessWidget {
                     avatarUrl: 'https://picsum.photos/250?image=9',
                   ),
                   TextFormField(),
+                  SizedBox(height: 16.0),
+                  ElevatedButton(
+                    onPressed: () => nuvigator.open(RoutesNames.homePage),
+                    child: Text('Home Page'),
+                  ),
                   SizedBox(height: 16.0)
                 ],
               ),

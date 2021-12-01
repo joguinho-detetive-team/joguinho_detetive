@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:joguinho_detetive/src/application/routes/routes_names.dart';
+import 'package:nuvigator/next.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -18,6 +19,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final nuvigator = Nuvigator.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(_titulo),
@@ -34,8 +37,7 @@ class _HomePageState extends State<HomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             ElevatedButton(
-              onPressed: () =>
-                  Navigator.pushNamed(context, RoutesNames.gamePage),
+              onPressed: () => nuvigator.open(RoutesNames.gamePage),
               child: Text('Game Page'),
             ),
           ],
