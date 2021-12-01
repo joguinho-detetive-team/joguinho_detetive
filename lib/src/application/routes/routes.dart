@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:joguinho_detetive/src/application/modules/login/login_page.dart';
 import 'package:joguinho_detetive/src/application/routes/routes_names.dart';
 import 'package:joguinho_detetive/src/application/modules/game/game_page.dart';
 import 'package:joguinho_detetive/src/application/modules/home/home_page.dart';
@@ -11,6 +12,12 @@ class AppRouter {
         return DetectivePageRoute(
           route: RoutesNames.homePage,
           builder: (context) => HomePage(),
+        );
+
+      case RoutesNames.loginPage:
+        return DetectivePageRoute(
+          route: RoutesNames.loginPage,
+          builder: (context) => LoginPage(),
         );
       case RoutesNames.gamePage:
         return DetectivePageRoute(
