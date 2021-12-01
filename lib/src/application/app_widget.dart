@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:joguinho_detetive/src/application/routes/routes.dart';
 import 'package:joguinho_detetive/src/application/routes/routes_names.dart';
-import 'package:joguinho_detetive/src/application/modules/home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   final String title;
@@ -9,6 +8,8 @@ class AppWidget extends StatelessWidget {
   AppWidget({
     required this.title,
   });
+
+  final scaffoldKey = GlobalKey<ScaffoldMessengerState>();
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +19,9 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      initialRoute: RoutesNames.homePage,
+      initialRoute: RoutesNames.loginPage,
       onGenerateRoute: AppRouter.generateRoutes,
-      home: HomePage(),
+      scaffoldMessengerKey: scaffoldKey,
     );
   }
 }
